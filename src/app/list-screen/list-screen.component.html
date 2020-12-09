@@ -1,0 +1,10 @@
+<p>list-screen works!</p>
+
+<ul>
+    <li *ngFor="let ticket of tickets$ | async">
+        Ticket: {{ ticket.id }}, {{ ticket.description }}
+        <button (click)="clicDetail(ticket)">
+            Détail
+        </button>
+    </li>
+</ul>
